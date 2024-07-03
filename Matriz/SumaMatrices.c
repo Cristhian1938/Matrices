@@ -1,17 +1,17 @@
 #include <stdio.h>
 
+// Función para sumar dos matrices 3x3
 void sumarMatrices(int matrizA[3][3], int matrizB[3][3], int resultado[3][3]) {
-    // Iterar sobre cada elemento de las matrices
+    // Sumar los elementos correspondientes de matrizA y matrizB
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
-            // Sumar los elementos correspondientes de matrizA y matrizB
             resultado[i][j] = matrizA[i][j] + matrizB[i][j];
         }
     }
 }
 
+// Función para mostrar una matriz 3x3
 void mostrarMatriz(int matriz[3][3]) {
-    // Mostrar la matriz
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             printf("%d ", matriz[i][j]);
@@ -41,7 +41,7 @@ int main() {
     // Sumar las matrices A y B
     sumarMatrices(matrizA, matrizB, matrizSuma);
 
-    // Mostrar la matriz resultado (matrizSuma)
+    // Mostrar las matrices y el resultado de la suma
     printf("Matriz A:\n");
     mostrarMatriz(matrizA);
 
