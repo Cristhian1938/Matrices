@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Función para multiplicar dos matrices 3x3
 void multiplicarMatrices(int matrizA[][3], int matrizB[][3], int resultado[][3]) {
     // Inicializar la matriz resultado con 0s
     for (int i = 0; i < 3; i++) {
@@ -18,8 +19,8 @@ void multiplicarMatrices(int matrizA[][3], int matrizB[][3], int resultado[][3])
     }
 }
 
+// Función para mostrar una matriz 3x3
 void mostrarMatriz(int matriz[][3]) {
-    // Mostrar la matriz
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             printf("%d ", matriz[i][j]);
