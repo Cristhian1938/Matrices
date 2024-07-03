@@ -11,20 +11,20 @@ int main() {
     printf("Matriz 3 x 3\n");
 
     // Presenta la Matriz
-    for (int i = 0; i < 3; i++) { // Itera sobre las filas
-        for (int j = 0; j < 3; j++) { // Itera sobre las columnas
-            printf("%d ", matrisC[i][j]); // Imprime cada elemento de la matriz
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", matrisC[i][j]);
         }
-        printf("\n"); // Nueva línea después de cada fila
+        printf("\n");
     }
     
     printf("Elementos impares de la Matriz:\n");
 
-    // Itera sobre la matriz para encontrar e imprimir los elementos impares
-    for (int i = 0; i < 3; i++) { // Itera sobre las filas
-        for (int j = 0; j < 3; j++) { // Itera sobre las columnas
+    // Imprime los elementos impares de la matriz
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
             if (matrisC[i][j] % 2 != 0) { // Verifica si el elemento es impar
-                printf("%d ", matrisC[i][j]); // Imprime el elemento impar
+                printf("%d ", matrisC[i][j]);
             }
         }
     }
