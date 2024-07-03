@@ -40,6 +40,9 @@ Este repositorio contiene varios programas en C que realizan diferentes operacio
 ### 12. TraspuestaMatriz.c
 - **Descripción:** Este programa calcula y muestra la matriz traspuesta de una matriz 3x3.
 
+### 13. DivisionMatriz.c
+- **Descripción:** Este programa divide los elementos de dos matrices 3x3 y muestra el resultado.
+
 ## Cómo Compilar y Ejecutar
 
 Cada archivo fuente se puede compilar utilizando `gcc` y ejecutar en la línea de comandos. Por ejemplo, para compilar y ejecutar `EimparesMatriz.c`, use los siguientes comandos:
