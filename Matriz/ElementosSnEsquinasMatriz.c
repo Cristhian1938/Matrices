@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
+    // Declaración e inicialización de una matriz 3x3
     int matrisC[3][3] = {
         {1, 2, 3},
         {4, 5, 6},
@@ -8,17 +9,18 @@ int main() {
     };
 
     printf("Matriz 3 x 3\n");
-//Presenta la Matriz
-    for (int i = 0; i < 3; i++)
-    {
-        for (int j = 0; j < 3; j++){
+
+    // Presenta la Matriz
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
             printf("%d ", matrisC[i][j]);
         }
         printf("\n");
     }
 
     printf("Matriz sin los elementos de las esquinas:\n");
-//Imprime los elementos de la matriz sin las esquinas
+
+    // Imprime los elementos de la matriz sin las esquinas
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             // Verificar si el elemento no está en las esquinas
