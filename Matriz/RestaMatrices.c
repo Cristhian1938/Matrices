@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-void sumarMatrices(int matrizA[][3], int matrizB[][3], int resultado[][3]) {
-    // Iterar sobre cada elemento de las matrices
+// Función para restar dos matrices 3x3
+void restarMatrices(int matrizA[][3], int matrizB[][3], int resultado[][3]) {
+    // Restar los elementos correspondientes de matrizA y matrizB
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
-            // Restar los elementos correspondientes de matrizA y matrizB
             resultado[i][j] = matrizA[i][j] - matrizB[i][j];
         }
     }
 }
 
+// Función para mostrar una matriz 3x3
 void mostrarMatriz(int matriz[][3]) {
-    // Mostrar la matriz
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             printf("%d ", matriz[i][j]);
@@ -35,21 +35,21 @@ int main() {
         {2, 1, 0}
     };
 
-    // Matriz para almacenar el resultado de la suma
-    int matrizSuma[3][3];
+    // Matriz para almacenar el resultado de la resta
+    int matrizResultado[3][3];
 
-    // Sumar las matrices A y B
-    sumarMatrices(matrizA, matrizB, matrizSuma);
+    // Restar las matrices A y B
+    restarMatrices(matrizA, matrizB, matrizResultado);
 
-    // Mostrar la matriz resultado (matrizSuma)
+    // Mostrar las matrices y el resultado de la resta
     printf("Matriz A:\n");
     mostrarMatriz(matrizA);
 
     printf("\nMatriz B:\n");
     mostrarMatriz(matrizB);
 
-    printf("\nMatriz Suma:\n");
-    mostrarMatriz(matrizSuma);
+    printf("\nMatriz Resultado (A - B):\n");
+    mostrarMatriz(matrizResultado);
 
     return 0;
 }
