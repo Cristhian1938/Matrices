@@ -5,7 +5,7 @@ Este repositorio contiene varios programas en C que realizan diferentes operacio
 ## Archivos
 
 ### 1. EimparesMatriz.c
-- **Link:**
+- **Link:** https://github.com/Cristhian1938/Matrices/blob/main/Matriz/EimparesMatriz.c
 - **Descripción:** Este programa imprime los elementos impares de una matriz 3x3.
 
 ### 2. ElementosSnEsquinasMatriz.c
