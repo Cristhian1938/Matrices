@@ -41,8 +41,9 @@ void llenarMatriz(struct Matriz matriz[13][4]) {
 // Función para mostrar la matriz en el formato especificado
 void mostrarMatriz(struct Matriz matriz[13][4]) {
     for (int col = 0; col < 4; col++) {
+        printf("%c: ", matriz[0][col].nombre);
         for (int fila = 0; fila < 13; fila++) {
-            printf("%d%c", matriz[fila][col].elementos[fila], matriz[fila][col].nombre);
+            printf("%d", matriz[fila][col].elementos[fila]);
             if (fila < 12) {
                 printf(", ");
             }
@@ -75,19 +76,27 @@ int main() {
     // Mostrar la matriz en el formato requerido
     mostrarMatriz(matriz);
 
-    //Ordenamiento de una columna usando el método de burbuja
-    int ejemploOrdenamiento[13];
-    for (int i = 0; i < 13; i++) {
-        ejemploOrdenamiento[i] = matriz[i][0].elementos[i];
-    }
-
-    // Ordenar usando burbuja
-    ordenarPorBurbuja(ejemploOrdenamiento, 13);
+    // Ordenar cada columna usando el método de burbuja y mostrar los resultados
     printf("\nOrdenado por burbuja:\n");
-    for (int i = 0; i < 13; i++) {
-        printf("%d ", ejemploOrdenamiento[i]);
+    for (int col = 0; col < 4; col++) {
+        printf("%c: ", matriz[0][col].nombre);
+        int ejemploOrdenamiento[13];
+        for (int i = 0; i < 13; i++) {
+            ejemploOrdenamiento[i] = matriz[i][col].elementos[i];
+        }
+
+        // Ordenar usando burbuja
+        ordenarPorBurbuja(ejemploOrdenamiento, 13);
+
+        // Mostrar el resultado ordenado
+        for (int i = 0; i < 13; i++) {
+            printf("%d", ejemploOrdenamiento[i]);
+            if (i < 12) {
+                printf(", ");
+            }
+        }
+        printf("\n");
     }
-    printf("\n");
 
     return 0;
 }
