@@ -65,5 +65,14 @@ Este repositorio contiene varios programas en C que realizan diferentes operacio
 - **Descripción:** Este programa muestra el resultado de la suma de una matriz A con una B en formato Hexadecimal.
 
 ### 16. OrdenarCartasBurbuja.c
-- **Link:** https://github.com/Cristhian1938/Matrices/blob/main/Matriz/SumaMatricesHexa.c
-- **Descripción:** Este programa muestra el resultado de la suma de una matriz A con una B en formato Hexadecimal.
+- **Link:** https://github.com/Cristhian1938/Matrices/blob/main/Matriz/OrdenarCartasBurbuja.c
+- **Descripción:** Este programa muestra el resultado de ordenar cartas mediante el metodo Burbuja.
+
+### 17. OrdenarCartasInsercion.c
+- **Link:** https://github.com/Cristhian1938/Matrices/blob/main/Matriz/OrdenarCartasInsecion.c
+- **Descripción:** Este programa muestra el resultado de ordenar cartas mediante el metodo de Insercion.
+
+### 18. OrdenarCartasMezcla.c
+- **Link:** https://github.com/Cristhian1938/Matrices/blob/main/Matriz/OrdenarCartazMezcla.c
+- **Descripción:** Este programa muestra el resultado de ordenar cartas mediante el metodo de Mezcla.
+
