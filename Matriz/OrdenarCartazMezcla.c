@@ -112,7 +112,7 @@ int main() {
     // Mostrar la matriz en el formato requerido
     mostrarMatriz(matriz);
 
-    // Ejemplo de ordenamiento de una columna usando el método de mezcla
+    // Ordenar cada columna usando el método de mezcla y mostrar los resultados
     printf("\nOrdenado por mezcla:\n");
     for (int col = 0; col < 4; col++) {
         int ejemploOrdenamiento[13];
@@ -121,7 +121,10 @@ int main() {
         }
         ordenarPorMezcla(ejemploOrdenamiento, 0, 12);
         for (int fila = 0; fila < 13; fila++) {
-            printf("%d ", ejemploOrdenamiento[fila]);
+            printf("%d%c", ejemploOrdenamiento[fila], matriz[fila][col].nombre);
+            if (fila < 12) {
+                printf(", ");
+            }
         }
         printf("\n");
     }
