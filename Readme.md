@@ -49,7 +49,7 @@ Este repositorio contiene varios programas en C que realizan diferentes operacio
 - **Descripción:** Este programa suma dos matrices 3x3 y muestra el resultado.
 
 ### 12. TraspuestaMatriz.c
-- **Link:**
+- **Link:** https://github.com/Cristhian1938/Matrices/blob/main/Matriz/TraspuestaMatriz.c
 - **Descripción:** Este programa calcula y muestra la matriz traspuesta de una matriz 3x3.
 
 ### 13. DivisionMatriz.c
